@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
@@ -90,12 +92,15 @@ import { FormsModule } from '@angular/forms';
 export class AuthComponent {
 
   formState = 'login';
+  sessionToken = "";
   user = {
     email: "",
     username: "",
     password: "",
     confirmPassword: ""
   }
+
+  constructor( private cookieService: CookieService, private router: Router) {}
 
   updateForm(form: string){
     this.formState = form;
@@ -107,6 +112,15 @@ export class AuthComponent {
     }
   }
 
+  generateRegexToken(length: number = 16): string {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let token = '';
+    for (let i = 0; i < length; i++) {
+      token += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return token;
+  }
+
   onSubmit(form: any) {
     if (form.invalid) return;
   
@@ -115,10 +129,16 @@ export class AuthComponent {
       return;
     }
   
+    this.sessionToken = this.generateRegexToken();
+
     if (this.formState === 'login') {
       console.log('Logging in...', this.user);
+      this.cookieService.set('sessionToken', this.sessionToken, 1);
+      this.router.navigate(['/home']);
     } else {
       console.log('Registering...', this.user);
+      this.cookieService.set('sessionToken', this.sessionToken, 1);
+      this.router.navigate(['/home']);
     }
   }
 }

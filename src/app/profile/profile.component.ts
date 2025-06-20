@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MyRecipesComponent } from '../my-recipes/my-recipes.component';
 import { ProfileDetailsComponent } from '../profile-details/profile-details.component';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -36,11 +38,15 @@ import { ProfileDetailsComponent } from '../profile-details/profile-details.comp
 export class ProfileComponent {
     tab = 'details'
 
+    constructor( private cookieService: CookieService, private router: Router) {}
+
     changeTab(newTab: string) {
        this.tab = newTab;
     }
 
     logout() {
       console.log('logout');
+      this.cookieService.delete('sessionToken', '/');
+      this.router.navigate(['/auth']);
     }
 }

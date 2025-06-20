@@ -4,12 +4,19 @@ import { AuthComponent } from "./auth/auth.component";
 import { NewsComponent } from "./news/news.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { RecipesComponent } from "./recipes/recipes.component";
+import { authGuard } from "./auth.guard";
 
 const routeConfig: Route[] = [
     {
+      path: '',
+      redirectTo: 'home',
+      pathMatch: 'full',  
+    },
+    {
       path: 'home',
       component: HomeComponent,
-      title: 'Home'
+      title: 'Home',
+      canActivate: [authGuard]
     },
     {
       path: 'auth',
@@ -19,17 +26,20 @@ const routeConfig: Route[] = [
     {
       path: 'news',
       component: NewsComponent,
-      title: 'News'
+      title: 'News',
+      canActivate: [authGuard]
     },
     {
       path: 'profile',
       component: ProfileComponent,
-      title: 'Profile'
+      title: 'Profile',
+      canActivate: [authGuard]
     },
     {
       path: 'recipes',
       component: RecipesComponent,
-      title: 'Find Recipes'
+      title: 'Find Recipes',
+      canActivate: [authGuard]
     }
   ];
 
