@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-navbar',
@@ -15,8 +16,8 @@ import { RouterModule, Router } from '@angular/router';
             <a routerLink="/news">News</a>
         </div>
         <div class="navbar__auth">
-          <button *ngIf="auth" (click)="gotoProfile()">My account</button>
-           <button *ngIf="auth" (click)="gotoAuth()">Login</button>
+          <button *ngIf="sessionToken" (click)="gotoProfile()">My account</button>
+           <button *ngIf="!sessionToken" (click)="gotoAuth()">Login</button>
         </div>
     </header>
   `,
@@ -26,7 +27,7 @@ export class NavbarComponent {
     auth = true;
     logoPath = '/assets/logo-transparent.png';
     
-    constructor(private router: Router) {}
+    constructor(private cookieService: CookieService, private router: Router) {}
 
     gotoAuth() {
       this.router.navigate(['/auth']);
@@ -34,5 +35,9 @@ export class NavbarComponent {
 
     gotoProfile() {
       this.router.navigate(['/profile']);
+    }
+
+    get sessionToken(): string {
+      return this.cookieService.get('sessionToken');
     }
 }
