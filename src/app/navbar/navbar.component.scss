@@ -5,7 +5,12 @@
     background-color: #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
     font-family: sans-serif;
-  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    
     &__logo {
       height: 100px;
       width: auto;
