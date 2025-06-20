@@ -15,8 +15,8 @@ import { RouterModule, Router } from '@angular/router';
             <a routerLink="/news">News</a>
         </div>
         <div class="navbar__auth">
-          <button *ngIf="auth" (click)="gotoProfile()">My account</button>
-           <button *ngIf="!auth" (click)="gotoAuth()">Login</button>
+          <button *ngIf="!auth" (click)="gotoProfile()">My account</button>
+           <button *ngIf="auth" (click)="gotoAuth()">Login</button>
         </div>
     </header>
   `,
