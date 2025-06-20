@@ -15,7 +15,7 @@ import { RouterModule, Router } from '@angular/router';
             <a routerLink="/news">News</a>
         </div>
         <div class="navbar__auth">
-          <button *ngIf="!auth" (click)="gotoProfile()">My account</button>
+          <button *ngIf="auth" (click)="gotoProfile()">My account</button>
            <button *ngIf="auth" (click)="gotoAuth()">Login</button>
         </div>
     </header>
@@ -23,7 +23,7 @@ import { RouterModule, Router } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-    auth = false;
+    auth = true;
     logoPath = '/assets/logo-transparent.png';
     
     constructor(private router: Router) {}

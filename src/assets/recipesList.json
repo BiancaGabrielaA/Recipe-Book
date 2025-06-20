@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Spaghetti Carbonara",
+      "description": "Classic Italian pasta with creamy egg sauce and pancetta.",
+      "ingredients": ["spaghetti", "eggs", "pancetta", "parmesan cheese", "black pepper"],
+      "location": "Italy"
+    },
+    {
+      "id": 2,
+      "name": "Sushi",
+      "description": "Vinegared rice with fresh fish and vegetables, wrapped in seaweed.",
+      "ingredients": ["sushi rice", "rice vinegar", "salmon", "nori", "cucumber"],
+      "location": "Japan"
+    },
+    {
+      "id": 3,
+      "name": "Tacos al Pastor",
+      "description": "Marinated pork tacos served with pineapple and cilantro.",
+      "ingredients": ["pork", "pineapple", "onions", "cilantro", "corn tortillas"],
+      "location": "Mexico"
+    },
+    {
+      "id": 4,
+      "name": "Butter Chicken",
+      "description": "Creamy tomato-based curry with marinated chicken.",
+      "ingredients": ["chicken", "tomatoes", "cream", "butter", "garam masala"],
+      "location": "India"
+    },
+    {
+      "id": 5,
+      "name": "Beef Bourguignon",
+      "description": "Slow-cooked beef stew with red wine and vegetables.",
+      "ingredients": ["beef", "red wine", "carrots", "onions", "mushrooms"],
+      "location": "France"
+    },
+    {
+      "id": 6,
+      "name": "Pad Thai",
+      "description": "Stir-fried rice noodles with shrimp, peanuts, and tamarind sauce.",
+      "ingredients": ["rice noodles", "shrimp", "peanuts", "bean sprouts", "tamarind paste"],
+      "location": "Thailand"
+    },
+    {
+      "id": 7,
+      "name": "Peking Duck",
+      "description": "Crispy roasted duck served with pancakes and hoisin sauce.",
+      "ingredients": ["duck", "cucumber", "spring onions", "hoisin sauce", "pancakes"],
+      "location": "China"
+    },
+    {
+      "id": 8,
+      "name": "Chili Con Carne",
+      "description": "Spicy stew with ground beef, beans, and chili peppers.",
+      "ingredients": ["ground beef", "kidney beans", "tomatoes", "onions", "chili powder"],
+      "location": "USA"
+    },
+    {
+      "id": 9,
+      "name": "Pierogi",
+      "description": "Dumplings filled with potatoes, cheese, or meat.",
+      "ingredients": ["flour", "potatoes", "cheese", "onions", "butter"],
+      "location": "Poland"
+    },
+    {
+      "id": 10,
+      "name": "Falafel Wrap",
+      "description": "Deep-fried chickpea balls served in pita bread with tahini sauce.",
+      "ingredients": ["chickpeas", "garlic", "parsley", "cumin", "pita bread"],
+      "location": "Middle East"
+    }
+  ]
+  
