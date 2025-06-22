@@ -81,7 +81,9 @@ import { Router } from '@angular/router';
               </div>
             </section>
             <section class="auth__body__actions">
-              <button>{{ formState === 'login' ? 'Sign In' : 'Sign Up' }}</button>
+              <button [disabled]="!authForm.valid || (formState === 'register' && user.password !== user.confirmPassword)" >
+                   {{ formState === 'login' ? 'Sign In' : 'Sign Up' }}
+              </button>
             </section>
             </form>
          </section>
