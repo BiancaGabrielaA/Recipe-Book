@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "name": "Spaghetti Carbonara",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Classic Italian pasta with creamy egg sauce and pancetta.",
+    "ingredients": ["spaghetti", "eggs", "pancetta", "parmesan cheese", "black pepper"],
+    "steps": [
+      "Cook spaghetti in salted boiling water until al dente.",
+      "Fry pancetta until crisp.",
+      "Beat eggs and mix with grated parmesan cheese.",
+      "Drain pasta, reserving some pasta water.",
+      "Combine pasta with pancetta and remove from heat.",
+      "Quickly stir in egg-cheese mixture, adding pasta water to make creamy sauce.",
+      "Season with black pepper and serve immediately."
+    ],
+    "location": "Italy"
+  },
+  {
+    "id": 2,
+    "name": "Sushi",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Vinegared rice with fresh fish and vegetables, wrapped in seaweed.",
+    "ingredients": ["sushi rice", "rice vinegar", "salmon", "nori", "cucumber"],
+    "steps": [
+      "Cook sushi rice and season with rice vinegar.",
+      "Place nori sheet on bamboo mat.",
+      "Spread rice evenly over nori, leaving the top edge free.",
+      "Lay slices of salmon and cucumber on rice.",
+      "Roll tightly using the bamboo mat.",
+      "Slice the roll into bite-sized pieces.",
+      "Serve with soy sauce, wasabi, and pickled ginger."
+    ],
+    "location": "Japan"
+  },
+  {
+    "id": 3,
+    "name": "Tacos al Pastor",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Marinated pork tacos served with pineapple and cilantro.",
+    "ingredients": ["pork", "pineapple", "onions", "cilantro", "corn tortillas"],
+    "steps": [
+      "Marinate pork with chili, pineapple juice, and spices for several hours.",
+      "Grill or roast the pork until cooked and slightly charred.",
+      "Warm corn tortillas.",
+      "Chop pork into small pieces.",
+      "Assemble tacos with pork, diced pineapple, onions, and cilantro.",
+      "Serve with lime wedges."
+    ],
+    "location": "Mexico"
+  },
+  {
+    "id": 4,
+    "name": "Butter Chicken",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Creamy tomato-based curry with marinated chicken.",
+    "ingredients": ["chicken", "tomatoes", "cream", "butter", "garam masala"],
+    "steps": [
+      "Marinate chicken with yogurt and spices.",
+      "Cook chicken until lightly browned.",
+      "Prepare tomato sauce with butter, garlic, and garam masala.",
+      "Add chicken to sauce and simmer until cooked through.",
+      "Stir in cream and cook for a few more minutes.",
+      "Serve with rice or naan bread."
+    ],
+    "location": "India"
+  },
+  {
+    "id": 5,
+    "name": "Beef Bourguignon",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Slow-cooked beef stew with red wine and vegetables.",
+    "ingredients": ["beef", "red wine", "carrots", "onions", "mushrooms"],
+    "steps": [
+      "Brown beef cubes in a pan.",
+      "Sauté onions, carrots, and mushrooms.",
+      "Add beef back to pot with red wine and beef broth.",
+      "Simmer slowly for several hours until beef is tender.",
+      "Season with herbs and serve with potatoes or bread."
+    ],
+    "location": "France"
+  },
+  {
+    "id": 6,
+    "name": "Pad Thai",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Stir-fried rice noodles with shrimp, peanuts, and tamarind sauce.",
+    "ingredients": ["rice noodles", "shrimp", "peanuts", "bean sprouts", "tamarind paste"],
+    "steps": [
+      "Soak rice noodles in warm water until soft.",
+      "Stir-fry shrimp until cooked.",
+      "Add noodles and tamarind sauce, stir-fry quickly.",
+      "Add bean sprouts and crushed peanuts.",
+      "Mix well and serve with lime wedges."
+    ],
+    "location": "Thailand"
+  },
+  {
+    "id": 7,
+    "name": "Peking Duck",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Crispy roasted duck served with pancakes and hoisin sauce.",
+    "ingredients": ["duck", "cucumber", "spring onions", "hoisin sauce", "pancakes"],
+    "steps": [
+      "Prepare duck by drying skin and glazing with maltose syrup.",
+      "Roast duck until skin is crispy.",
+      "Slice duck thinly.",
+      "Serve with warm pancakes, cucumber, spring onions, and hoisin sauce.",
+      "Assemble pancakes with duck and condiments."
+    ],
+    "location": "China"
+  },
+  {
+    "id": 8,
+    "name": "Chili Con Carne",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Spicy stew with ground beef, beans, and chili peppers.",
+    "ingredients": ["ground beef", "kidney beans", "tomatoes", "onions", "chili powder"],
+    "steps": [
+      "Brown ground beef with onions.",
+      "Add tomatoes, kidney beans, and chili powder.",
+      "Simmer for at least an hour to develop flavor.",
+      "Adjust seasoning and serve with rice or bread."
+    ],
+    "location": "USA"
+  },
+  {
+    "id": 9,
+    "name": "Pierogi",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Dumplings filled with potatoes, cheese, or meat.",
+    "ingredients": ["flour", "potatoes", "cheese", "onions", "butter"],
+    "steps": [
+      "Prepare dough and roll thin.",
+      "Make filling with mashed potatoes and cheese.",
+      "Cut dough into circles and fill with potato mixture.",
+      "Fold and seal edges.",
+      "Boil pierogi until they float.",
+      "Serve with fried onions and butter."
+    ],
+    "location": "Poland"
+  },
+  {
+    "id": 10,
+    "name": "Falafel Wrap",
+    "imageURL": "/assets/image-1.jpg",
+    "description": "Deep-fried chickpea balls served in pita bread with tahini sauce.",
+    "ingredients": ["chickpeas", "garlic", "parsley", "cumin", "pita bread"],
+    "steps": [
+      "Soak chickpeas overnight and grind with garlic, parsley, and spices.",
+      "Form mixture into balls and deep-fry until crispy.",
+      "Warm pita bread.",
+      "Assemble wrap with falafel, tahini sauce, and fresh vegetables.",
+      "Serve immediately."
+    ],
+    "location": "Middle East"
+  }
+]
