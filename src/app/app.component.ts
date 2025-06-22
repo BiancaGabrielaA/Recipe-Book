@@ -9,17 +9,19 @@ import { CookieService } from 'ngx-cookie-service';
   selector: 'app-root',
   imports: [RouterOutlet, NavbarComponent, CommonModule, FooterComponent],
   template: `
-      <main class="main">
+      <main class="page-wrapper">
         <div class="content">
             <div *ngIf="sessionToken">
                 <app-navbar ></app-navbar>
             </div>
-            <router-outlet />
-             <div *ngIf="sessionToken">
-                <app-footer></app-footer>
+            <div class="page-content">
+                 <router-outlet />
             </div>
         </div>
       </main>
+       <div *ngIf="sessionToken">
+            <app-footer></app-footer>
+        </div>
     `,
   styleUrl: './app.component.scss'
 })
