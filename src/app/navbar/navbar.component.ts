@@ -13,7 +13,6 @@ import { CookieService } from 'ngx-cookie-service';
         <div class="navbar__menu">
             <a routerLink="/home">Home</a>
             <a routerLink="/recipes">Find recipes</a>
-            <a routerLink="/news">News</a>
         </div>
         <div class="navbar__auth">
           <button *ngIf="sessionToken" (click)="gotoProfile()">My account</button>

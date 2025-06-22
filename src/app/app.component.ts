@@ -13,9 +13,11 @@ import { CookieService } from 'ngx-cookie-service';
         <div class="content">
             <div *ngIf="sessionToken">
                 <app-navbar ></app-navbar>
-                <app-footer></app-footer>
             </div>
             <router-outlet />
+             <div *ngIf="sessionToken">
+                <app-footer></app-footer>
+            </div>
         </div>
       </main>
     `,
