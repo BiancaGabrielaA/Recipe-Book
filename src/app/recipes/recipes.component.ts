@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RecipesService } from '../recipes.service';
 import { RecipeType } from '../recipe-type';
+import { RecipeModalComponent } from '../recipe-modal/recipe-modal.component';
 
 @Component({
   selector: 'app-recipes',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RecipeModalComponent],
   template: `
     <main class="recipes">
       <section class="recipes__header">
@@ -46,6 +47,7 @@ import { RecipeType } from '../recipe-type';
           </div>
         </div>
       </section>
+      <app-recipe-modal *ngIf="selectedRecipe" [recipe]="selectedRecipe" (close)="selectedRecipe = null"></app-recipe-modal>
     </main>
   `,
   styleUrls: ['./recipes.component.scss']
@@ -53,6 +55,7 @@ import { RecipeType } from '../recipe-type';
 export class RecipesComponent {
   recipesList: RecipeType[] = [];
   filteredRecipes: RecipeType[] = [];
+  selectedRecipe: RecipeType | null = null;
 
   nameFilter = ["Alphabetically from A to Z", "Alphabetically from Z to A"];
   locationFilter = ["All", "Italy", "Japan", "Mexico", "India", "France", "Thailand", "China", "USA", "Poland", "Middle East"];
@@ -74,18 +77,16 @@ export class RecipesComponent {
     const searchText = this.filter.text.trim().toLowerCase();
   
     this.filteredRecipes = this.recipesList.filter(recipe => {
-      // Match search text in name or description
       const matchesText = !searchText ||
         recipe.name.toLowerCase().includes(searchText) ||
         recipe.description.toLowerCase().includes(searchText);
   
-      // Match location filter (allow empty or 'All' as no filter)
       const matchesLocation = !this.filter.location || this.filter.location === 'All' || recipe.location === this.filter.location;
   
       return matchesText && matchesLocation;
     });
   
-    // Sort alphabetically if filter.name matches
+
     if (this.filter.name === "Alphabetically from A to Z") {
       this.filteredRecipes.sort((a, b) => a.name.localeCompare(b.name));
     } else if (this.filter.name === "Alphabetically from Z to A") {
@@ -94,7 +95,6 @@ export class RecipesComponent {
   }
 
   showDetails(recipe: RecipeType) {
-    // Implement your logic to show recipe details here
-    console.log('Show details for:', recipe);
+    this.selectedRecipe = recipe;
   }
 }

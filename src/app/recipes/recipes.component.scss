@@ -44,20 +44,6 @@
           max-width: 250px;
         }
   
-        button.primary {
-          background-color: #007bff;
-          color: white;
-          padding: 0.5rem 1.2rem;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-          font-weight: 600;
-          transition: background-color 0.3s ease;
-  
-          &:hover {
-            background-color: #0056b3;
-          }
-        }
       }
   
       &__body {
@@ -109,24 +95,25 @@
               color: #999;
             }
   
-            button {
-              background-color: transparent;
-              border: 1px solid #007bff;
-              color: #007bff;
-              padding: 0.3rem 0.8rem;
-              border-radius: 4px;
-              cursor: pointer;
-              font-weight: 600;
-              transition: background-color 0.3s ease, color 0.3s ease;
-  
-              &:hover {
-                background-color: #007bff;
-                color: white;
-              }
-            }
           }
         }
       }
     }
+    
+    button{
+      background-color: white;
+      border: 1px solid #e63d3d; 
+      color: #e63d3d;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05); 
+      }
+    }
   }
   
+ 
