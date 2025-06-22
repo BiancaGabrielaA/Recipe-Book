@@ -1,0 +1,132 @@
+.recipes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  
+    &__header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  
+      &__text {
+        display: flex;
+        flex-direction: column;
+  
+        p {
+          font-size: 1.3rem;
+          font-weight: 600;
+          margin-bottom: 0.3rem;
+        }
+  
+        span {
+          font-size: 0.9rem;
+          color: #555;
+          line-height: 1.4;
+          max-width: 600px;
+        }
+      }
+  
+      &__filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+  
+        input[type="text"],
+        select {
+          padding: 0.4rem 0.6rem;
+          font-size: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          min-width: 180px;
+          flex-grow: 1;
+          max-width: 250px;
+        }
+  
+        button.primary {
+          background-color: #007bff;
+          color: white;
+          padding: 0.5rem 1.2rem;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-weight: 600;
+          transition: background-color 0.3s ease;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+  
+      &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1rem;
+  
+        &__recipe-card {
+          display: flex;
+          flex-direction: column;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+          transition: box-shadow 0.3s ease;
+          background: white;
+  
+          &:hover {
+            box-shadow: 0 5px 15px rgb(0 0 0 / 0.15);
+          }
+  
+          img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+          }
+  
+          p {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0.5rem 1rem 0.3rem 1rem;
+          }
+  
+          span {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0 1rem 0.8rem 1rem;
+            flex-grow: 1;
+          }
+  
+          > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 1rem 1rem 1rem;
+  
+            span {
+              font-size: 0.85rem;
+              color: #999;
+            }
+  
+            button {
+              background-color: transparent;
+              border: 1px solid #007bff;
+              color: #007bff;
+              padding: 0.3rem 0.8rem;
+              border-radius: 4px;
+              cursor: pointer;
+              font-weight: 600;
+              transition: background-color 0.3s ease, color 0.3s ease;
+  
+              &:hover {
+                background-color: #007bff;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
