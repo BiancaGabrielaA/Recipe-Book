@@ -19,7 +19,7 @@
   {
     "id": 2,
     "name": "Sushi",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-2.jpg",
     "description": "Vinegared rice with fresh fish and vegetables, wrapped in seaweed.",
     "ingredients": ["sushi rice", "rice vinegar", "salmon", "nori", "cucumber"],
     "steps": [
@@ -36,7 +36,7 @@
   {
     "id": 3,
     "name": "Tacos al Pastor",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-3.jpg",
     "description": "Marinated pork tacos served with pineapple and cilantro.",
     "ingredients": ["pork", "pineapple", "onions", "cilantro", "corn tortillas"],
     "steps": [
@@ -52,7 +52,7 @@
   {
     "id": 4,
     "name": "Butter Chicken",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-4.jpg",
     "description": "Creamy tomato-based curry with marinated chicken.",
     "ingredients": ["chicken", "tomatoes", "cream", "butter", "garam masala"],
     "steps": [
@@ -68,7 +68,7 @@
   {
     "id": 5,
     "name": "Beef Bourguignon",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-5.jpg",
     "description": "Slow-cooked beef stew with red wine and vegetables.",
     "ingredients": ["beef", "red wine", "carrots", "onions", "mushrooms"],
     "steps": [
@@ -83,7 +83,7 @@
   {
     "id": 6,
     "name": "Pad Thai",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-6.jpg",
     "description": "Stir-fried rice noodles with shrimp, peanuts, and tamarind sauce.",
     "ingredients": ["rice noodles", "shrimp", "peanuts", "bean sprouts", "tamarind paste"],
     "steps": [
@@ -98,7 +98,7 @@
   {
     "id": 7,
     "name": "Peking Duck",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-7.jpg",
     "description": "Crispy roasted duck served with pancakes and hoisin sauce.",
     "ingredients": ["duck", "cucumber", "spring onions", "hoisin sauce", "pancakes"],
     "steps": [
@@ -113,7 +113,7 @@
   {
     "id": 8,
     "name": "Chili Con Carne",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-8.jpg",
     "description": "Spicy stew with ground beef, beans, and chili peppers.",
     "ingredients": ["ground beef", "kidney beans", "tomatoes", "onions", "chili powder"],
     "steps": [
@@ -127,7 +127,7 @@
   {
     "id": 9,
     "name": "Pierogi",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-9.jpg",
     "description": "Dumplings filled with potatoes, cheese, or meat.",
     "ingredients": ["flour", "potatoes", "cheese", "onions", "butter"],
     "steps": [
@@ -143,7 +143,7 @@
   {
     "id": 10,
     "name": "Falafel Wrap",
-    "imageURL": "/assets/image-1.jpg",
+    "imageURL": "/assets/image-10.jpg",
     "description": "Deep-fried chickpea balls served in pita bread with tahini sauce.",
     "ingredients": ["chickpeas", "garlic", "parsley", "cumin", "pita bread"],
     "steps": [
